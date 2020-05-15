@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo -- ${ruby:=ruby} > /dev/null
+dirname="`dirname $0`"
+lib="$dirname/lib"
+mozlz4="$dirname/bin/mozlz4"
+
+$ruby -I"$lib" "$mozlz4" "$@"
