@@ -1,6 +1,6 @@
 # mozlz4 - mozlz4 archive library and tool for ruby
 
-***ATTENTION: If you are dealing with important files, make a backup before doing so.***
+***ATTENTION: If you are dealing with important files, make a backup before doing so.***  
 NOTE: The document is written in Japanese.
 
 ***注意: 大事なファイルを扱う場合は、バックアップを取ってから行って下さい。***
@@ -40,6 +40,9 @@ Mozilla Firefox で使われている ".mozlz4" データを格納・展開す�
   - Project page: <https://github.com/dearblue/ruby-mozlz4>
   - Licensing: [2 clause BSD License](LICENSE)
   - Dependency external gems:
-      - [extlz4](https://github.com/dearblue/ruby-extlz4)
+      - [tty-pager](https://rubygems.org/gems/tty-pager)
+        under [MIT License](https://github.com/piotrmurach/tty-pager/blob/master/LICENSE.txt)
+        by [Piotr Murach](https://github.com/piotrmurach)
+      - [extlz4](https://rubygems.org/gems/extlz4)
         under [2 clause BSD License](https://github.com/dearblue/ruby-extlz4/blob/master/LICENSE)
         by me ([dearblue](https://github.com/dearblue))
