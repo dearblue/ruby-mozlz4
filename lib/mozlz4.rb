@@ -62,6 +62,12 @@ module MozLZ4
     src.unmozlz4(*args, **opts)
   end
 
+  class << MozLZ4
+    alias compress encode
+    alias decompress decode
+    alias uncompress decode
+  end
+
   # @api private
   MAGICNUMBER = "mozLz40\x00".b
 
