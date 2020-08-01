@@ -1,14 +1,11 @@
 require "extlz4"
-require "rbconfig"
 
 using LZ4
 
 module MozLZ4
   refine String do
-    rbrel = %w(MAJOR MINOR TEENY).reduce(0) { |a, nm|
-      a * 100 + RbConfig::CONFIG[nm].to_i
-    }
-    using LZ4 if rbrel < 20700
+    # ruby-2.7 以前では、リファインメント内で外側の using が有効にならない
+    using LZ4
 
     #
     # @overload to_mozlz4(dest) -> dest
